@@ -17,7 +17,7 @@ spec:
   github:
     argo-combined-app:                          # event name
       repositories:
-        - owner: majoferenc
+        - owner: lubomirfirment
           names:
             - demo-cicd-automation-app
       webhook:
