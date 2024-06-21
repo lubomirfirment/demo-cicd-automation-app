@@ -38,3 +38,5 @@ out/
 
 .env
 !.argo/argocd-notifications-cm.yaml
+!.argo/argocd-notifications-secret.yaml
+
