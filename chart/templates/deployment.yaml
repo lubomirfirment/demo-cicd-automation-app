@@ -19,6 +19,7 @@ spec:
       {{- end }}
       labels:
         {{- include "cicd-automation-app.selectorLabels" . | nindent 8 }}
+        test: true
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
