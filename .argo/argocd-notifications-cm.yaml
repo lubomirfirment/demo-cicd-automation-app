@@ -15,7 +15,7 @@ data:
     token: $slack-token
   service.webhook.slack_webhook: >
     url:
-    https://hooks.slack.com/services/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
+    https://hooks.slack.com/services/XXXX/XXXX
   
     headers:
 
