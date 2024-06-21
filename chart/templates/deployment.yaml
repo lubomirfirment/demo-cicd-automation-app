@@ -4,6 +4,8 @@ metadata:
   name: {{ include "cicd-automation-app.fullname" . }}
   labels:
     {{- include "cicd-automation-app.labels" . | nindent 4 }}
+    test: true
+
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
@@ -19,7 +21,6 @@ spec:
       {{- end }}
       labels:
         {{- include "cicd-automation-app.selectorLabels" . | nindent 8 }}
-        test: true
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
