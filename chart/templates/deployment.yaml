@@ -4,7 +4,7 @@ metadata:
   name: {{ include "cicd-automation-app.fullname" . }}
   labels:
     {{- include "cicd-automation-app.labels" . | nindent 4 }}
-    test: "true4"
+    test: "true5"
 
 spec:
   {{- if not .Values.autoscaling.enabled }}
